@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaHome, FaStore, FaUser } from 'react-icons/fa'; // Import icons
 
 function Navbar({ cartCount }) {
   return (
@@ -8,10 +8,26 @@ function Navbar({ cartCount }) {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">GreenXchange</h1>
         <div className="flex items-center space-x-6">
-          <Link to="/" className="hover:text-green-300">Home</Link>
-          <Link to="/marketplace" className="hover:text-green-300">Marketplace</Link>
-          <Link to="/profile" className="hover:text-green-300">Profile</Link>
-          <Link to="/cart" className="relative">
+          {/* Home Link */}
+          <Link to="/" className="flex items-center hover:text-green-300">
+            <FaHome className="mr-2" size={20} />
+            Home
+          </Link>
+
+          {/* Marketplace Link */}
+          <Link to="/marketplace" className="flex items-center hover:text-green-300">
+            <FaStore className="mr-2" size={20} />
+            Marketplace
+          </Link>
+
+          {/* Profile Link */}
+          <Link to="/profile" className="flex items-center hover:text-green-300">
+            <FaUser className="mr-2" size={20} />
+            Profile
+          </Link>
+
+          {/* Cart Link */}
+          <Link to="/cart" className="relative flex items-center">
             <FaShoppingCart size={24} />
             {cartCount > 0 && (
               <span className="absolute top-0 right-0 bg-red-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center">

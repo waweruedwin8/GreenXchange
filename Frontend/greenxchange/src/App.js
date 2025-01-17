@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'; // Ensure the correct relative path
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // Import the Footer component
 import Marketplace from './pages/Marketplace';
 import Cart from './pages/Cart';
 import Profile from './pages/Profile';
@@ -52,7 +53,6 @@ function App() {
     <Router>
       <Navbar cartCount={cart.reduce((count, item) => count + item.quantity, 0)} />
       <Routes>
-        {/* Add the Home route */}
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<Marketplace onAddToCart={addToCart} />} />
         <Route
@@ -68,6 +68,7 @@ function App() {
         />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Footer /> {/* Add the Footer here */}
     </Router>
   );
 }
