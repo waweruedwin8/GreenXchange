@@ -1,0 +1,183 @@
+@import url(..//css/clash-display.css);
+
+:root{
+    --c-dark: #212529;
+    --c-brand: #036003;
+    --c-brand-light: #4CAF50;
+    --c-brand-rgb: 76, 175, 80;
+    --c-body: #2c3237;
+    --font-base: 'clash-display', sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5 ease;
+}
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);    
+}
+
+a:hover{
+    color: var(--c-brand-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-dark);  
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--c-brand);
+}
+
+.btn{
+    font-weight: 600;
+    font-size:14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand{
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover{
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+/*hero*/
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438) ), url(../assets/images/treeroot.jpg);
+    background-size: contain ;
+    background-position: center;
+    margin-bottom: 0.5rem;
+}
+
+/*Section title*/
+.section-title{
+    margin-bottom: 0.5rem;
+}
+
+
+/*Iconbox*/
+.iconbox{
+    width: 70px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+.myUL-container {
+    text-align: center; /* Center-align the container */
+    }
+    
+.myUL {
+    display: inline-block; /* Make the ul an inline-block element */
+    text-align: left; /* Optional: left-align the list items */
+    }
+
+/*Meet the team*/
+.card {
+    margin-bottom: 30px;
+    border: 1px solid var(--c-brand);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color:var(--c-brand);
+}
+
+.card-text {
+    color: var(--c-dark);
+}
+
+.waitlist-container1{
+    background-color: rgba(var(--c-brand-rgb), 0.5);
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+#waitlist{
+    background-color: rgba(var(--c-brand-rgb), 0.1);
+}
+
+/* login page*/
+#login-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438) ), url(../assets/images/hero-5.jpg);
+    background-size: contain ;
+    background-position: center;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1; /* Ensures the container is above the overlay */
+}  
+
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+#footer{
+    background-color: rgb(62, 169, 44);
+    color: white;
+    padding: 40px 0;
+}
