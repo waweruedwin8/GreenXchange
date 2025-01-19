@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; gi
+import './App.css'; 
 
 const LoginForm = ({ onSwitch }) => {
   const [email, setEmail] = useState('');
