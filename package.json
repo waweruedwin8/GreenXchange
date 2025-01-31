@@ -1,0 +1,8 @@
+{
+  "name": "GreenXchange",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:waweruedwin8/GreenXchange.git",
+  "author": "waweruedwin8 <waweruedwin8@gmail.com>",
+  "license": "MIT"
+}
